@@ -50,20 +50,18 @@ transform: scale(1.08);
 
 <script>
 
-function randomMeme(){
-
 const memes = [
-
 "https://i.imgflip.com/1ggg7w.gif",
 "https://i.imgflip.com/21b6gx.jpg",
 "https://i.imgflip.com/2wifvo.jpg",
 "https://i.imgflip.com/2hgfw.jpg"
-
 ]
 
-const random = memes[Math.floor(Math.random()*memes.length)]
+function randomMeme(){
 
-document.getElementById("meme").src = random
+let random = Math.floor(Math.random()*memes.length)
+
+document.getElementById("meme").src = memes[random]
 
 }
 
@@ -81,7 +79,8 @@ document.getElementById("meme").src = random
 
 <p>
 That wasn't supposed to be the correct answer...  
-You don't like meeee!?... Please think again....
+You don't like meeee!? 😾  
+Please think again....
 </p>
 
 <a href="index.html">
