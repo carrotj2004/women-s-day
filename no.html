@@ -1,40 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Try Again</title>
+<title>Wrong Answer</title>
 
 <style>
+
 body{
 font-family: Arial;
-text-align:center;
-background-color:#f9a9ed;
-padding-top:100px;
+text-align: center;
+background: linear-gradient(135deg,#ffe4ec,#ffc0cb);
+padding-top: 80px;
+color: #8b004f;
+margin: 0;
+}
+
+h2{
+margin-bottom: 10px;
+}
+
+.card{
+background: white;
+padding: 30px;
+margin: auto;
+width: 75%;
+max-width: 450px;
+border-radius: 18px;
+box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+img{
+margin-top: 20px;
+border-radius: 15px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+max-width: 100%;
 }
 
 button{
-padding:10px 20px;
-font-size:16px;
-border:none;
-border-radius:8px;
-background:#ff4da6;
-color:white;
-cursor:pointer;
+padding: 12px 24px;
+font-size: 16px;
+border: none;
+border-radius: 25px;
+background: #ff1493;
+color: white;
+cursor: pointer;
+margin-top: 20px;
 }
+
+button:hover{
+transform: scale(1.08);
+}
+
 </style>
+
+<script>
+
+function randomMeme(){
+
+const memes = [
+
+"https://i.imgflip.com/1ggg7w.gif",
+"https://i.imgflip.com/21b6gx.jpg",
+"https://i.imgflip.com/2wifvo.jpg",
+"https://i.imgflip.com/2hgfw.jpg"
+
+]
+
+const random = memes[Math.floor(Math.random()*memes.length)]
+
+document.getElementById("meme").src = random
+
+}
+
+</script>
 
 </head>
 
-<body>
+<body onload="randomMeme()">
 
-<h2>😑 You said NO?</h2>
+<div class="card">
 
-<img src="https://i.imgur.com/4AiXzf8.jpeg" width="300">
+<h2>🐶 The dog is disappointed...</h2>
 
-<p>That wasn't supposed to be the correct answer... You dont like meeee!?</p>
+<img id="meme">
+
+<p>
+You clicked NO?? <br><br>
+That's absolutely wrong option... You dont like me..?  <br>
+Try again hooman.
+</p>
 
 <a href="index.html">
 <button>Try Again</button>
 </a>
+
+</div>
 
 </body>
 </html>
