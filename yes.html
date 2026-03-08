@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Message</title>
+<title>Happy Women's Day</title>
 
 <style>
+
 body{
 font-family: Arial;
-text-align:center;
-background-color:#fdc6d9;
-padding-top:100px;
+text-align: center;
+background: linear-gradient(135deg,#ffe4ec,#ffc0cb);
+padding-top: 80px;
+color: #8b004f;
+margin: 0;
+}
+
+h1{
+margin-bottom: 20px;
+}
+
+.card{
+background: white;
+padding: 35px;
+margin: auto;
+width: 75%;
+max-width: 750px;
+border-radius: 18px;
+box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+line-height: 1.7;
+font-size: 16px;
 }
 
 button{
-padding:10px 20px;
-font-size:16px;
-border:none;
-border-radius:8px;
-background:#ff4da6;
-color:white;
-cursor:pointer;
+padding: 12px 24px;
+font-size: 16px;
+border: none;
+border-radius: 25px;
+background: #ff1493;
+color: white;
+cursor: pointer;
+margin-top: 25px;
 }
+
+button:hover{
+transform: scale(1.08);
+}
+
 </style>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
 </head>
 
@@ -28,37 +55,60 @@ cursor:pointer;
 
 <h1>💐 Happy Women's Day 💐</h1>
 
+<div class="card">
+
 <p>
 To every woman reading this… 🌷
+<br><br>
 
 You are far more powerful than the world often tells you. In your quiet strength, in the way you rise after every fall, in the way you carry love even when your heart is tired — there is a kind of courage that deserves to be celebrated every single day.
+<br><br>
 
-You fight battles people don’t always see.
-You wipe your tears and still show up with a smile.
+You fight battles people don’t always see.  
+You wipe your tears and still show up with a smile.  
 You lift others even when you are still learning how to heal yourself.
+<br><br>
 
-Sometimes you are told to be strong.
-Sometimes you are expected to stay silent.
+Sometimes you are told to be strong.  
+Sometimes you are expected to stay silent.  
 Sometimes your sacrifices go unnoticed.
+<br><br>
 
-But today, let it be said clearly — you are not just someone who endures life, you are someone who *shapes* it.
+But today, let it be said clearly — you are not just someone who endures life, you are someone who shapes it.
+<br><br>
 
-Your dreams matter.
-Your voice deserves to be heard.
+Your dreams matter.  
+Your voice deserves to be heard.  
 Your kindness changes lives in ways you may never even realize.
+<br><br>
 
-So keep believing in yourself. Keep walking forward, even on the days when the road feels heavy. The world is brighter, warmer, and more hopeful because women like you exist in it.
+So keep believing in yourself. Keep walking forward, even on the days when the road feels heavy.  
+The world is brighter, warmer, and more hopeful because women like you exist in it.
+<br><br>
 
-Happy Women’s Day to every woman who continues to love, fight, hope, and rise again. You are truly extraordinary. 🌸✨
-Love you all....💖
-  
+Happy Women’s Day to every woman who continues to love, fight, hope, and rise again.  
+You are truly extraordinary. 🌸✨
+<br><br>
+
+Love you all 💖
+
 </p>
 
-<h3>Thank you 💖</h3>
+</div>
 
 <a href="index.html">
 <button>Back to Home</button>
 </a>
+
+<script>
+
+confetti({
+particleCount: 150,
+spread: 90,
+origin: { y: 0.6 }
+})
+
+</script>
 
 </body>
 </html>
